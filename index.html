@@ -10,6 +10,29 @@
 
     <link rel="stylesheet" href="index.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+  <script>
+    function putarlagu() {
+      rex.play()
+    }
+
+    const run = setInterval(function() {
+
+
+  let detik = new Date().getSeconds();
+  let menit = new Date().getMinutes();
+  let jam = new Date().getHours();
+
+
+  const vjam = document.getElementById('jjam');
+  vjam.innerHTML = `${jam}` + " : " + `${menit}` + " : " + `${detik}` ;
+
+  if (jam >= 18 && jam <= 23) {
+      document.getElementById("sahur").innerHTML = "Selamat Malam";
+  }
+    
+}, 1000);
+  </script>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
 
@@ -24,28 +47,37 @@
     <div class="col-6 nature">
       <h3 class="font">Hallo, How Are You ?</h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
     <div class="col-6 nature">
       <h3 class="font">I hope you are fine</h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+    <div class="col-6 nature">
+      <h3 class="font">Rehat Sejenak. Gimana Lagunya ? Wkwk bagus gatuh</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+      
+      <button type="button" class="btn btn-outline-primary putar1" onclick="putarlagu()">Putar Lagu</button>
 
       
     </div>
     <div class="col-6 nature">
       <h3 class="font">by the way I made this for you</h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
     <div class="col-6 nature">
       <h3 class="font">This is Me</h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
@@ -53,25 +85,80 @@
       <h3 class="font">But in virtual form
 </h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
 <div class="col-6 nature">
       <h3 class="font">Keren Ga tuh ? Wkwkwkw </h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
 <div class="col-6 nature">
       <h3 class="font">Keren Ga tuh ? Wkwkwkw </h3>
       <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next</button>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Ini hadiah ulang Tahun gua buat lu wkwkw </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Gua Harap ini membantu lu, ini adalah Asisten Pribadi buatan gua </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Ini bakal aktif 24Jam loh</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Gua harap lu suka sih, kalau nggak juga gapapa gak maksa akuma</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Makasih banyak loh</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words </button>
+
+      
+    </div>
+   <div class="col-6 nature">
+      <h3 class="font">Btw kalau gini doang mah gak asik, jadi gua buat fitur buat bangunin sahur, Cek di sini</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+      <br>
+      <a href="darwanvn.github.io/sahur.io" class="btn btn-outline-primary putar1">Cek Jadwal Sahur</a>
       
     </div>
   </div>
+
+  <div class="row">
+      <div class="col">
+        <div id="jam">
+          <div id="hour">
+            <h2 id="jjam" class="font-jam"></h2>
+            <h2 id="sahur" class="font-jam1" style="font-size: 13px; margin-left: 15px;"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+      <audio src="lagu/rex.mp3" id="rex"></audio>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
