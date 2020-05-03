@@ -1,0 +1,16 @@
+@media (max-width: 576px) { 
+    #ilustrasi {
+      margin-left: -340px;
+      margin-top: -250px;
+      width: 800px;
+      height: 700px;
+    }
+    
+    .font {
+      margin-top: 250px;
+      margin-left: -70px;
+      font-family: 'Indie Flower', cursive;
+
+    }
+ 
+}
