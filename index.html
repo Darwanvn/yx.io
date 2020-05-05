@@ -13,41 +13,7 @@
     <!-- JavaScript W3School Buat Slide Next -->
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-  <script>
-  // Ini Fungsi buat nyalain lagunya
 
-    function putarlagu() {
-      rex.play()
-    }
-
-// Nah ini fungsi Jamnya
-const run = setInterval(function() {
-
-  // Var Jam, Menit, Detik.
-  let detik = new Date().getSeconds();
-  let menit = new Date().getMinutes();
-  let jam = new Date().getHours();
-
-  // Pemanggilan Jam ke dalam Html
-  const vjam = document.getElementById('jjam');
-  vjam.innerHTML = `${jam}` + " : " + `${menit}` + " : " + `${detik}` ;
-
-  //Jika Lebih Dari Jam 6 && Kurang dari Jam 23
-  if (jam == 16) {
-     document.getElementById("music").style.display:none;
-  }
-  //Jika Jam 3
-  else if (jam == 3) {
-     document.getElementById("sahur").innerHTML = "Sahur Woy";
-  }
-  //Jika Lebih Dari Jam 1 && Kurang dari jam 18
-  else if ( jam >= 1 && jam <= 18 ) {
-     document.getElementById("sahur").innerHTML = "Selamat Malam";
-  }
-    
-}, 1000);
-// Akhir Dari Fungsi Jam
-  </script>
 
   <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -178,15 +144,7 @@ const run = setInterval(function() {
     </div>
   </div>
 
-  <div class="row">
-      <div class="col">
-        <div id="jam">
-          <div id="hour">
-            <h2 id="jjam" class="font-jam"></h2>
-            <h2 id="sahur" class="font-jam1" style="font-size: 13px; margin-left: 15px;"></h2>
-          </div>
-        </div>
-      </div>
+
     </div>
   <!-- Akhir Dari Percakapan -->
 
